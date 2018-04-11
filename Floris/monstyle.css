@@ -1,0 +1,622 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow');
+
+/*****************Reste à faire******************/
+/* REgEx sur le nom et le prénom
+/* "email non valid" qui n'apparait pas tout de suite
+/* valider l'inscription
+/* gérer les promotions
+/* gérer les couleurs
+
+
+/*****************Body******************/
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: 'PT Sans Narrow', sans-serif;
+}
+
+body {
+	background-image: url("images/fond.png");
+	background-repeat: repeat-y;
+	margin: 0px;
+	position: absolute;
+	height: 100%;
+	width: : 100%;
+}
+
+a{
+	color: black;
+}
+
+a:link {
+    text-decoration: none;
+    
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #ed3c6f;
+}
+
+a:active {
+    text-decoration: underline;
+}
+table{
+	padding: 2vw;
+}
+
+td{
+	height: 20vh;
+
+}
+
+th{
+	font-size: 2vw;
+	width: 20vw;
+}
+
+h3{
+	position: absolute;
+	font-size: 5vw;
+	font-family: 'Amatic SC', cursive;
+	left: 5vw;
+	width: 60vw;
+}
+
+/*****************NavBarre******************/
+
+#top_nav_barre {
+	background-color: #A8A8A8;
+	position: fixed;
+	width: 100%;
+	height: 10vh;
+	z-index:1000;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.icone_nav_barre{
+	position: relative;
+	height: 5vh;	
+	
+	left: 1vh;
+	margin-right: 3vh;
+	margin: 2vh;
+}
+
+.icone_login_nav_barre{
+	position: absolute;
+	height: 5vh;	
+	
+	right: 4vw;
+	margin-right: 3vh;
+	margin: 2vh;
+}
+
+.icone_admin_nav_barre{
+	position: absolute;
+	height: 5vh;	
+	right: 10vw;
+	margin-right: 3vh;
+	margin: 2vh;
+}
+
+.drop_icone_nav_barre{
+	position: relative;
+	width: 5vh;	
+	top: 2vh;
+	left: 2vh;
+	margin-right: 3vh;
+	margin-bottom: 2vh;
+	z-index:1800;
+}
+
+#drop_menu_fleur{
+	position: absolute;
+	background-color: #ed3c6f;
+	width: 9vh;
+	height: 32vh;
+	top:-22vh;
+	left: 1vh;
+	opacity:0;
+	z-index:1800;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#drop_menu_fleur:hover{
+	opacity:1;
+	top:0vh;
+	z-index:1500;
+}
+
+/*****************Index******************/
+
+section{
+	margin-top: 15vh;
+	position: relative;
+	height: 100%;
+	overflow: hidden;
+	width: 100vw;
+}
+
+.barre_coupure{
+	position: absolute;
+	background-color: #D4D4D4;
+	height: 8vh;
+	width: 100%
+}
+
+.box_index{
+	position: absolute;
+	width: 40vw;
+	height: 60vh;
+	left: 50vw;
+	top: 40vh;
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-size: 4vh;
+
+}
+
+#map {
+		position: absolute;
+        width: 40vw;
+		height: 40vh;
+		left: 50vw;
+		top: 40vh;
+        background-color: grey;
+      }
+
+#nom_floris{
+	position: relative;
+	left: 55vw;
+	top: 50vh;
+	font-family: 'Amatic SC', cursive;
+	font-size: 10vw;
+	overflow: visible;
+}
+
+h1{
+	position: relative;
+	margin-top: 15vh;
+	font-family: 'Amatic SC', cursive;
+	font-size: 8vw;
+	left: 50vw;
+}
+
+.img_index_grande {
+	position: relative;
+	height: 50vh;
+	left: 10vh;
+}
+
+#logo_accueil{
+	position: absolute;
+	height: 50vh;
+	top: 18vh;
+	left: 43vw;
+}
+
+/*****************Produits******************/
+
+.recherche_produit{
+	position: fixed;
+	top: 10vh;
+	width: 100%;
+	background-color: white;
+}
+
+#recherche_horizontal{
+font-size: 2vw;
+-webkit-transform: rotate(90deg);
+-moz-transform: rotate(90deg);
+-o-transform: rotate(90deg);
+writing-mode: lr-tb;
+}
+
+#formulaire_recherche{
+	position: absolute;
+	top:13vh;
+	padding-left: 2vw;
+	line-height: 25px;
+
+}
+
+#side_bar{
+	position: fixed;
+	background-color: #11a8a4;
+	width: 20vw;
+	left: -18vw;
+	/*left: 0vw;*/
+	top: 0vh;
+	height: 100%;
+	z-index: 500;
+	overflow: scroll;
+	box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.2), 0 10px 25px 0 rgba(0, 0, 0, 0.19);
+}
+
+#side_bar:hover{
+	left: 0vw;
+}
+
+#groupe_produit{
+	position: relative;
+	top: 10vh;
+}
+
+.box_produit{
+	position: relative;
+	background-color: white;
+	left: 30vw;
+	height: 28vh;
+	width: 60vw;
+	margin: 3vh;
+	padding-left: 2vh;
+	box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.19);
+}
+
+.vignette_produit_panier{
+	position: relative;
+	
+	height: 18vh;
+}
+
+.vignette_produit{
+	position: absolute;
+	right: -30vw;
+	height: 20vh;
+	margin-top: 1vw;
+}
+
+.vignette_produit:hover{
+	height: 23vh;
+}
+
+.box_vignette{
+	position: relative;
+	left:20vw;
+	top:0px;
+}
+
+.titre_produit{
+	font-size: 3vw;
+	font-family: 'Amatic SC', cursive;
+}
+
+.add1{
+	position: absolute;
+	border-radius: 5px;
+	font-size: 2vw;
+	background-color: #D4D4D4;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	padding: 1vw;
+	margin-top: 1vw;
+}
+
+.add2{
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 1px 3px #666666;
+  -moz-box-shadow: 0px 1px 3px #666666;
+  		box-shadow: 0px 1px 3px #666666;
+ 		font-family: 'PT Sans Narrow', sans-serif;
+ 		color: #000000;
+  		font-size: 18px;
+  		background: black;
+  		padding: 10px 20px 10px 20px;
+  		text-decoration: none;
+	
+}
+
+.add2{
+	  	background: #ed3c6e;
+  		text-decoration: none;
+  		color: black;
+}
+
+.btn_add{
+	  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 1px 3px #666666;
+  -moz-box-shadow: 0px 1px 3px #666666;
+  box-shadow: 0px 1px 3px #666666;
+  font-family: Arial;
+  color: #000000;
+  font-size: 18px;
+  background: #d4d4d4;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn_details{
+	  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 1px 3px #666666;
+  -moz-box-shadow: 0px 1px 3px #666666;
+  box-shadow: 0px 1px 3px #666666;
+  font-family: Arial;
+  color: #000000;
+  font-size: 18px;
+  background: #d4d4d4;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.add:hover{
+	box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.2), 0 10px 25px 0 rgba(0, 0, 0, 0.19);
+}
+
+#label_promo{
+	font-size: 2vw;
+	padding-left: 2vw;
+	color: #ed3c6f;
+}
+
+#new_price{
+	font-size: 1.5vw;
+	color: #ed3c6f;
+}
+
+/*****************Description******************/
+
+.box_detail{
+	position: relative;
+	top: 10vh;
+	width: 90vw;
+	background-color: white;
+	padding: 2vw;
+	margin: 2vw;
+}
+
+.box_description{
+	position: relative;
+	margin-top: 3vw;
+	padding-top: 2vw;
+}
+
+.photo_produit{
+	position: absolute;
+	height: 50vh;
+	right : 10vw;
+	z-index: 500;
+}
+
+#titre_desc{
+	font-size: 2vw;
+	font-family: 'Amatic SC', cursive;
+}
+
+#para_desc{
+	position: relative;
+	width: 60vh;
+}
+
+/*****************Panier******************/
+
+#table_panier{
+	margin: 2vw;
+	background-color: white;
+	text-align: center;
+	font-size: 1.5vw;
+}
+
+.panier_produit_nom{
+	border-top: 1px solid grey;
+	width: 15vw;
+}
+
+.panier_produit_conditionnement{
+	width: 25vw;
+	border-top: 1px solid grey;
+}
+
+.panier_produit_quantite{
+	width: 25vw;
+	border-top: 1px solid grey;
+}
+
+.panier_produit_prix{
+	width: 25vw;
+	border-top: 1px solid grey;
+}
+
+.panier_produit_supp{
+	width: 25vw;
+	border-top: 1px solid grey;
+}
+.panier_produit_image
+{
+	width: 10vw;
+	border-top: 1px solid grey;
+}
+
+#total{
+
+	font-size: 4vw;
+}
+
+
+/*****************Inscription******************/
+
+#form_inscription{
+	position: relative;
+	width: 80vw;
+	height: auto;
+	line-height: 30px;
+	left: 10vw;
+	text-align: center;
+	border: none;
+}
+
+/*.champs{
+
+	position: absolute;
+	align-items: center;
+	font-size: 1.8vw;
+	width: 25vw;
+	height: 2vw;
+	
+}*/
+
+.envoyer{
+	width: 10vw;
+	height: 3vw;
+}
+
+.error-asterix{
+	font-size: 20px;
+	display: inline;
+	color: red;
+	display: none;
+}
+
+.error-message{
+	font-size: 20px;
+	display: inline;
+	color: red;
+	display: none;
+}
+
+.error-message2{
+	font-size: 20px;
+	display: inline;
+	color: red;
+	display: none;
+}
+
+.btn {
+	  background: #ed3c6f;
+  -webkit-border-radius: 15;
+  -moz-border-radius: 15;
+  border-radius: 15px;
+  font-family: 'PT Sans Narrow';
+  color: #fffcff;
+  font-size: 2vw;
+  padding: 1vw 1.5vw 1vw 1.5vw;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #11A8A4;
+  text-decoration: none;
+}
+
+ .champs { 
+	border-color:#cccccc; 
+	font-size:1.5vw; 
+	padding:9px; 
+	border-style:hidden; 
+	color:#11a8a3; 
+	font-weight:normal; 
+	font-family:'PT Sans Narrow'; 
+	border-width:0px; 
+	width: 30vw;
+	/*box-shadow:inset 0px 0px 4px 0px rgba(42,42,42,.75);  */} 
+
+ .champs:focus { outline:none; } 
+
+h2{
+	position: relative;
+	
+	font-family: 'Amatic SC', cursive;
+	font-size: 6vw;
+	left: 50vw;
+}
+
+.error {
+	line-height: 10px;
+}
+
+
+#va_t_inscrire{
+	position: absolute;
+	top: 20vw;
+	left: 15vw;
+	width: 70vw;
+	padding: 3vw;
+	height: auto;
+	text-align: center;
+	background-color: white;
+	font-size: 1.5vw;
+}
+
+.btn_sinscrire{
+	  background: #ed3c6f;
+  -webkit-border-radius: 15;
+  -moz-border-radius: 15;
+  border-radius: 15px;
+  font-family: 'PT Sans Narrow';
+  color: #fffcff;
+  font-size: 2vw;
+  padding: 1vw 1.5vw 1vw 1.5vw;
+  text-decoration: none;
+
+}
+
+.btn_sinscrire:hover{
+	background: #11A8A4;
+	 text-decoration: none;
+  color: #ffffff;
+
+
+}
+
+#box_admin{
+	position: absolute;
+	top: 20vw;
+	left: 15vw;
+	width: 70vw;
+	padding: 3vw;
+	height: auto;
+	text-align: center;
+	background-color: white;
+	font-size: 1.5vw;
+}
+
+
+#table_inscrits{
+	height: 3vw;
+	background-color: white;
+}
+
+.section_admin{
+	padding-right: 10vw;
+}
+
+table.table_inscrits{
+
+	width: 20vw;
+	text-align: center;
+	height: 2vh;
+}
+
+
+
+td.tbl_inscrits{
+	width: 15vw;
+	text-align: center;
+}
+
+th.tbl_inscrits{
+	font-size: 2vw;
+}
+
+#log_mail{
+	position: absolute;
+	right: 15vw;
+	padding-top: 1.5vw;
+}
+
+#retour_accueil{
+	position: absolute;
+	width: 20vw;
+	padding-top: 10vw;
+	padding-left: 5vw;
+}
+
